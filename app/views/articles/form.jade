@@ -20,9 +20,15 @@ block content
           input(type="hidden", name="_method", value="PUT")
 
         .control-group
-          label.control-label(for='title') Title
+          label.control-label(for='title') Nom de la recette
           .controls
             input#title.input-xlarge(type='text', name="title", value=article.title, placeholder='Enter the title')
+              
+              
+        .control-group
+          label.control-label(for='title') Categorie
+          .controls
+            input#title.input-xlarge(type='text', name="cat", value=article.cat, placeholder='Enter the cat')
 
         .control-group
           label.control-label(for='title') Image
@@ -30,9 +36,9 @@ block content
             input(type='file', name="image[]")
 
         .control-group
-          label.control-label(for='desc') Body
+          label.control-label(for='desc') Ingredients
           .controls
-            textarea#desc.input-xlarge(type='text', rows="5", name="body", placeholder='Enter the article description')=article.body
+            textarea#desc.input-xlarge(type='text', rows="5", name="body", placeholder='Enter the ingredients')=article.body
 
         .control-group
           label.control-label(for='desc') Tags
